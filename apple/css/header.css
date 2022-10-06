@@ -1,0 +1,222 @@
+.top-bar{
+    width: 100%;
+    height: 132px;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+}
+
+.icon{
+    filter: blur(1px) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    opacity: 69%;
+    margin-top: 30px;
+}
+/******MENU BAR*******/
+.menu-bar{
+    width: 50%;
+    height: 39px;
+    display: flex;
+    flex-flow:wrap row;
+    float: left;
+    justify-content: space-around;
+    text-align: center;
+    margin-left: 153px;
+    background-color: #D9D9D9;
+    padding: 0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 19px;
+    padding: 0 38px;
+    position: absolute;
+    right: 30%;
+    margin-top: 8px;
+}
+
+.menu-bar li{
+    margin-top: 5px;
+    
+}
+.menu-bar li a{
+    font-size: 25px;
+    color: black;
+    font-weight: 400;
+}
+
+
+/******SECOND MENU BAR*******/
+.second-menu{
+    position: absolute;
+    padding: 0;
+    width: 225px;
+    background-color: #D9D9D9;
+    display: none;
+    list-style-position: inside;
+    margin: 0;
+}
+
+.second-menu li a{
+    text-align: center;
+    font-size: 19px;
+    font-weight: 400;
+    color: black;
+}
+ul.second-menu{
+    list-style-position: inside;
+    padding: 0;
+}
+
+/*****HOVER*****/
+
+ul.menu-bar li.one:hover ul.second-menu{
+    display: block;
+    
+}
+.menu-bar li:hover{
+    text-decoration: underline;
+    
+    
+}
+.menu-bar li:hover > a{
+    text-decoration: underline;
+    font-weight: 600;
+    
+}
+.account li:hover{
+    text-decoration: underline;
+}
+.account li:hover > a{
+    text-decoration: underline;
+    font-weight: 600;
+}
+.icon:hover{
+    opacity: 90%;
+    
+}
+
+
+ /******ACCOUNT*******/
+.account{
+    display: flex;
+    flex-flow:wrap row;
+    float: right;
+    margin-right: 9px;
+    justify-content: center;
+    background-color: #895555;
+    padding: 0;
+    height: 39px;
+    width: 291px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 19px;
+    margin-top: 8px;
+}
+.account li{
+    margin-top: 10px;
+}
+.account li a{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 300;
+    color: black;
+}
+.account li{
+    margin-top: 5px;
+}
+
+/*text decoration list*/
+.top-bar ul li a{
+    text-decoration: none;
+}
+.top-bar ul li{
+    list-style: none;
+}
+hr{
+    color: black;
+    width: 75%;
+}
+/********BAR********/
+.bar{
+    display: none;
+}
+
+/******MEDIA*******/
+
+@media screen and (max-width: 1000px) {
+    .menu-bar{
+        display: none;
+        flex-flow: column;
+    }
+    .account{
+        display: none;
+    }
+    .icon{
+        width: 34px;
+        height: 46px;
+    }
+    
+    /******bar*****/
+    .bar{
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        position: absolute;
+        right: 38px;
+        top: 42px;
+        cursor: pointer;
+        width: 50px;
+        height: 40px;
+        
+        
+        
+    }
+    .bar span {
+        position: absolute;
+        width: 45px;
+        height: 7px;
+        background: black;
+        border-radius: 100px;
+        display: inline-block;
+        transition: 0.3s ease;
+        left: 0;
+      }
+      .bar span.top {
+        top: 0;
+      }
+      .bar span.middle {
+        top: 17px;
+      }
+      
+      .bar span.bottom {
+        bottom: 0;
+      }
+      .check{
+        opacity: 0;
+      }
+      #check{
+        opacity: 0;
+      }
+      input[type]:checked > .menu-bar{
+        display: block;
+      }
+      
+      input[type]:checked ~ span.top {
+        transform: rotate(45deg);
+        transform-origin: top left;
+        width: 48px;
+        left: 5px;
+        color: black;
+      }
+      
+      input[type]:checked ~ span.bottom {
+        transform: rotate(-45deg);
+        transform-origin: top left;
+        width: 48px;
+        bottom: -1px;
+        box-shadow: 0 0 10px #79838d;
+      }
+      
+      input[type]:checked ~ span.middle {
+        transform: translateX(-20px);
+        opacity: 0;
+      }
+      
+ }

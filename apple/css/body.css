@@ -1,0 +1,22 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url('file:///C:/Users/ayman/Downloads/0edf2565be7c6d768b567ce0b5156735%201%20(1).jpg');
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-size: 100%;
+    
+    
+    
+    
+}
+@media screen and (max-width: 1000px) {
+    .body{
+        background-size: 100%, cover;
+
+    }
+
+}

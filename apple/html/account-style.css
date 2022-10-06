@@ -1,0 +1,199 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    background-image: url('file:///C:/Users/ayman/Downloads/0edf2565be7c6d768b567ce0b5156735%201%20(1).jpg');
+    background-repeat: no-repeat;
+    background:contain ;
+    background-position-x:center;
+    background-size: 100%;
+    justify-content: center;
+    align-items: center;
+    
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+.log-in{
+    position: relative;
+    
+    background: #D9D9D9;
+    box-shadow: 0px 4px 4px #8B5353;
+    width: 371px;
+    height: 376px;
+}
+
+/********imput******/
+/* From uiverse.io by @alexruix */
+.input-group {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 138px;
+    left: 68px;
+   }
+   .input {
+    border: solid 1.5px #9e9e9e;
+    border-radius: 1rem;
+    background: none;
+    padding: 1rem;
+    font-size: 1rem;
+    color: #000000;
+    transition: border 150ms cubic-bezier(0.4,0,0.2,1);
+   }
+   
+   .user-label {
+    position: absolute;
+    left: 24px;
+    color: #000000;
+    opacity: 50%;
+    pointer-events: none;
+    transform: translateY(1rem);
+    transition: 150ms cubic-bezier(0.4,0,0.2,1);
+   }
+   
+   .input:focus, input:valid {
+    outline: none;
+    border: 1.5px solid #1a73e8;
+   }
+   
+   .input:focus ~ label, input:valid ~ label {
+    transform: translateY(-50%) scale(0.8);
+    background-color: #D9D9D9;
+    opacity: 100%;
+    padding: 0 .2em;
+    color: #2196f3;
+   }
+   /*******impuit 1********/
+.input-group1 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 219px;
+    left: 68px;
+   }
+   .input1 {
+    border: solid 1.5px #9e9e9e;
+    border-radius: 1rem;
+    background: none;
+    padding: 1rem;
+    font-size: 1rem;
+    color: #000000;
+    transition: border 150ms cubic-bezier(0.4,0,0.2,1);
+   }
+   
+   .user-label1 {
+    position: absolute;
+    left: 24px;
+    color: #000000;
+    opacity: 50%;
+    pointer-events: none;
+    transform: translateY(1rem);
+    transition: 150ms cubic-bezier(0.4,0,0.2,1);
+   }
+   
+   .input1:focus, input1:valid {
+    outline: none;
+    border: 1.5px solid #1a73e8;
+   }
+   
+   .input1:focus ~ label, input1:valid ~ label {
+    transform: translateY(-50%) scale(0.8);
+    background-color: #D9D9D9;
+    opacity: 100%;
+    padding: 0 .2em;
+    color: #2196f3;
+   }
+   /*******TITLE*****/
+   .title{
+    justify-content: center;
+    display: flex;
+    font-size: 60px;
+    font-family: Lucida, serif;
+   }
+   hr{
+    width: 70%;
+   }
+
+   /******Botton*****/
+   /* From uiverse.io */
+button {
+    --color: #8B5353;
+    font-family: inherit;
+    display: inline-block;
+    width: 6em;
+    height: 2.6em;
+    line-height: 2.5em;
+    margin: 20px;
+    position: relative;
+    top: 179px;
+    left: 175px;
+    overflow: hidden;
+    border: 2px solid var(--color);
+    transition: color .5s;
+    z-index: 1;
+    font-size: 17px;
+    border-radius: 6px;
+    font-weight: 500;
+    color: var(--color);
+    background-color: #D9D9D9;
+   }
+   button a{
+    --color: #8B5353;
+    font-family: inherit;
+    font-size: 17px;
+    text-decoration: none;
+    color: var(--color);
+   }
+   
+   button:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+   }
+   
+   button a:hover {
+    color: #fff;
+   }
+   
+   button:before {
+    top: 100%;
+    left: 100%;
+    transition: all .7s;
+   }
+   
+   button:hover:before {
+    top: -30px;
+    left: -30px;
+   }
+   
+   button:active:before {
+    background: #8B5353;
+    transition: background 0s;
+   }
+   /******a*******/
+   .singin{
+    position: absolute;
+    top: 311px;
+    left: 139px;
+    opacity: 75%;
+   }
+   .mdpob{
+    position: absolute;
+    top: 294px;
+    left: 62px;
+    opacity: 75%;
+   }
