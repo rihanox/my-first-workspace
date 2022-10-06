@@ -1,5 +1,6 @@
 git clone ... (site web)
 cd ...
+git add -A
 git commit -m "message"
 git push
 git pull/git fetch
