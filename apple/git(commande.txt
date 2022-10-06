@@ -1,0 +1,5 @@
+git clone ... (site web)
+cd ...
+git commit -m "message"
+git push
+git pull/git fetch
