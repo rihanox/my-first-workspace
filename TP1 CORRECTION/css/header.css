@@ -1,0 +1,73 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.topbar{
+    position: fixed;
+    top:0;
+    left:0;
+    right: 0;
+    width: 100%;
+    background-color: white;
+    padding: 31px 87px;
+    -webkit-box-shadow: 0 4px 30px rgba( 0, 0, 0, .5);
+            box-shadow: 0 4px 30px rgba( 0, 0, 0, .5);
+    z-index: 1;
+    opacity: 0.8;
+    
+
+}
+.topbar .blur{
+    -webkit-filter:blur(5px);
+            filter:blur(5px)
+    
+    
+}
+.topbar nav{
+    float: left;
+    
+}
+.social{
+    float:right;
+}
+.social a{
+    padding: 0 12px;
+    opacity: .5;
+    -webkit-filter:blur(1px);
+            filter:blur(1px)
+}
+.social a:hover{
+    padding: 0 12px;
+    opacity: 1;
+    -webkit-filter:blur(0);
+            filter:blur(0)
+}
+
+.topbar nav a{
+    color: #9f9f9f;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0 53px;
+}
+
+.topbar nav a:hover, .topbar nav a.active{
+    color: black;
+    -webkit-text-decoration: underline solid;
+            text-decoration: underline solid;
+}
+.banniere img{
+    height: 427px;
+    width: 100%;
+    background: url("images/header-back.png");
+    background: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.social img:hover{
+    transform: scale(1.1) rotate(10deg);
+}
